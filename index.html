@@ -11,7 +11,7 @@
     </style>
   </head>
   <body>
-    <button style="width: 10px; height: 10px; background: transparent; border: none;">
+    <button style="width: 30px; height: 30px; background: transparent; border: none;">
       <span class="material-symbols-outlined" style="color: #ffffff;" theme="dark">brightness_4</span>
     </button>
     <script>
@@ -22,10 +22,12 @@
           span.setAttribute("theme", "light")
           span.textContent = "brightness_5"
           document.body.style.backgroundColor = "#ffffff";
+          span.style.color = "#000000";
         } else {
           span.setAttribute("theme", "dark")
           span.textContent = "brightness_4"
           document.body.style.backgroundColor = "#000000";
+          span.style.color = "#ffffff";
         }
       });
     </script>
